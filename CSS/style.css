@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&family=Rubik:wght@300;400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**clases de la navbar**/
+header {
+    background-color: #FFFFFF;
+    padding: 3.2px 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*grid-area: header;*/
+}
+
+header div a img {
+    width: 56px; /* Cambia este valor al ancho deseado */
+    height: 56px /* Cambia este valor al largo deseado */
+}
+
+.navBar{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+}
+
+.navBar li a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #8C7E7E;
+}
+
+.navBar li a:hover{
+    color: #D70D6E;
+    text-shadow: 2px 2px 10px #D70D6E;
+}
+
+
+/**clases del footer**/
+footer {
+    background-color: #D9D9D9;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer div p {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin: 3px 10px;
+}
+
+footer div a img {
+    width: 30px; /* Cambia este valor al ancho deseado */
+    height: 30px; /* Cambia este valor al largo deseado */
+    margin: 0px 10px;
+}
+
+footer section h3 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    margin: 7px 0px 0px 5px;
+}
+
+footer div dl dt {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 2px;
+}
+
+footer div dl dd {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 11.2px;
+    color: black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+/*****************  codigo css de index  *****************/
+/*clases del index.html*/
+
+/**clases del main Index**/
+.sectionPrincipalIndex {
+    width: 100%;
+    height: 480px   ;
+    background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1984&q=80");
+    background-position: 50% 25%; /** para centrar de la imagen **/
+    text-align: center;
+    background-repeat: no-repeat; /** no se repita la imagen **/
+    background-size: cover; /** me abarque todo el ancho **/
+    margin-bottom: .625rem;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evely;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.sectionPrincipalIndex div h1 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 160px;
+    color: #ffffff;
+    padding: 4.8px;
+}
+
+.sectionPrincipalIndex div h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 96px;
+    color: #ffffff;
+    padding: 5px;
+}
+.sectionPrincipalIndex button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-size: 16px; /* Cambia el tamaño del texto dentro del botón */
+    margin: 10.4px 20.8px;
+}
+
+.sectionPrincipalIndex button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sectionSecundariaIndex div button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: none;
+    border-radius: .625rem; 
+    padding: .625rem 1.25rem;
+    font-size: 1rem; /* Cambia el tamaño del texto dentro del botón */
+    margin-bottom: 2rem;
+}
+
+.sectionSecundariaIndex div button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.sectionSecundariaIndex div img {
+    width: 25rem; /* Cambia este valor al ancho deseado */
+    height: 15.625rem; /* Cambia este valor al largo deseado */
+    margin-top: 3rem;
+}
+
+.sectionSecundariaIndex {
+    display: grid;
+    grid-template-areas: 
+    "img-1 img-2 img-3 img-4"
+    "boton-1 boton-2 boton-3 boton-4"
+    ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.img-1 {
+    grid-area: img-1;
+    justify-self: center;
+    align-self: center;
+}
+.img-2 {
+    grid-area: img-2;
+    justify-self: center;
+    align-self: center;  
+}
+
+.img-3 {
+    grid-area: img-3;
+    justify-self: center;
+    align-self: center;  
+}
+
+.img-4 {
+    grid-area: img-4;
+    justify-self: center;
+    align-self: center;  
+}
+
+.boton-1 {
+    grid-area: boton-1;
+    justify-self: center;
+    align-self: center;
+}
+
+.boton-2 {
+    grid-area: boton-2;
+    justify-self: center;
+    align-self: center;
+}
+
+.boton-3 {
+    grid-area: boton-3;   
+    justify-self: center;
+    align-self: centar;
+}
+.boton-4 {
+    grid-area: boton-4;   
+    justify-self: center;
+    align-self: center;
+}
+
+
+
+
+/*****************  codigo css de catalogo  *****************/
+/**clases del main Catalogo**/
+
+
+main h2 {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    color: #D70D6E;
+    margin:  0rem .5rem 0.5rem .5rem ;
+}
+
+.productosCatalogo div img {
+    width: 450px; /* Cambia este valor al ancho deseado */
+    height: 300px; /* Cambia este valor al largo deseado */
+    margin-left: 10px;
+}
+
+.productosCatalogo div button {
+    background-color: #D70D6E;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px; 
+    padding: 10px 20px;
+    font-size: 16px; /* Cambia el tamaño del texto dentro del botón */
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+
+.productosCatalogo div button a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.productosCatalogo {
+    padding: 1rem 3rem 2.5rem 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: .625rem
+}
